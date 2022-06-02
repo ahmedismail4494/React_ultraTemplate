@@ -1,0 +1,80 @@
+/* 
+===============================
+        Home Styles
+=============================== 
+*/
+
+import styled from 'styled-components';
+
+
+export const Home_el = styled.div`
+  height: 100vh;
+  background: url('images/portfolio-img (13).jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+`
+
+export const Home_information = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+`
+
+export const Home_title = styled.h2` 
+  font-size: 60px;
+  font-weight: bold;
+  color: #5e5e5e;
+
+  @media (max-width:768px) {
+    font-size: 40px;
+    color: #fff;
+    }
+  @media (max-width:575px) {
+    font-size: 30px;
+    }
+`
+
+export const Home_info = styled.h4` 
+  font-size: 35px;
+  color: #eb5424;
+  margin-bottom: 20px;
+
+  @media (max-width:768px) {
+    font-size: 20px
+    }
+`
+
+export const Home_desc = styled.p`
+  font-size: 20px;
+  line-height: 1.5;
+  color: #888;
+  margin-bottom: 20px;
+
+  @media (max-width:768px) {
+    font-size: 15px
+    }
+`
+
+export const Home_desc_span = styled.span`
+  color: #000;
+` 
+
+export const Home_btn = styled.button` 
+  background: #eb5424;
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover{
+    background: #fff;
+    color: #eb5424
+  }
+`
+
