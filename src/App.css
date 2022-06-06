@@ -4,10 +4,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
 }
+
+.App {
+  text-align: center;
+}
+
+
+.navlink{
+  display: block;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}.navlink:hover{
+  color: #eb5424
+} 

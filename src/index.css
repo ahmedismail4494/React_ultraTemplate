@@ -1,7 +1,6 @@
 *{
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -19,8 +18,9 @@ code {
     monospace;
 }
 
-.container {
+.container{
   width: 85%;
   margin: auto;
 }
+
 
