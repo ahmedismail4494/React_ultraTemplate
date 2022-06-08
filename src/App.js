@@ -1,33 +1,27 @@
-import './App.css';
+import React, {Component} from "react";
+import { BrowserRouter , Switch, Route } from 'react-router-dom';
 
-import React, {Component} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
-
-import Navbar from './compoments/Navbar/Navbar';
-import Collection from './compoments/Collection/Collection';
-import Contact from './compoments/Contact/Contact';
-import Footer from './compoments/Footer/Footer';
-
-
+import Navbar from "./Component/Navbar";
+import Index from "./Component/Index/index";
+import Contact from "./Component/Contact/index";
 
 
 class App extends Component {
   render(){
     return (
-    <BrowserRouter>
-      <div>
 
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={ <Collection /> } /> 
-        <Route path="/Contact" element={ <Contact /> } /> 
-      </Routes>
-      <Footer />
+      <BrowserRouter>
+        <div className="App">
+          <Navbar/>
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route exact path="/React_ultraTemplate" component={Index} />
+            <Route exact path="/Contact" component={Contact} />
+            
+          </Switch> 
+        </div>
+      </BrowserRouter>
 
-      </div>
-    </BrowserRouter>  
     );
   }
 }
